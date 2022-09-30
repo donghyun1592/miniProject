@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: 'jdbc:postgresql://son-test.ccwrivcg14q1.ap-northeast-2.rds.amazonaws.com:5432/postgres'
+    username: 'son'
+    password: 'thsehdgus1234'
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  logging.level:
+    org.hibernate.SQL: debug
