@@ -2,8 +2,8 @@
   <div class="header">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img class="logo-image" src='../assets/logo.png'>
+        <a class="navbar-brand" href="/">
+          <img class="logo-image" src='../assets/logo.png' alt="logo">
         </a>
         <button class="navbar-toggler"
                 type="button"
@@ -32,14 +32,17 @@
               </a>
             </li>
           </ul>
-          <form class="d-flex">
+          <form class="d-flex align-middle">
             <input class="form-control me-2 search-input"
                    type="search"
                    placeholder="물품이나 동네를 검색해보세요"
                    aria-label="Search">
-<!--            <a class="nav-link" href="#">-->
-<!--              <span class="user-select">로그인</span>-->
-<!--            </a>-->
+            <router-link to="/login" class="login pt-1">
+              <span class="pr-2">로그인</span>
+            </router-link>
+            <router-link to="/signup" class="login pt-1">
+              <span>회원가입</span>
+            </router-link>
           </form>
         </div>
       </div>
@@ -54,8 +57,8 @@ export default {
 <style lang="scss" scoped>
 ::v-deep{
   .navbar{
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   .logo-image{
     width: 120px;
@@ -76,11 +79,9 @@ export default {
     width: 250px;
     background-color: #f2f3f6;
   }
-  .user-select{
-    padding-top: 2px;
+  .login{
+    margin-right: 5px;
   }
-
-
 }
 
 </style>

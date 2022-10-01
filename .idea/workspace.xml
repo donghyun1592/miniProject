@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddb76126-e658-4ac7-a680-b9c83a4fac4a" name="Changes" comment="init router">
+    <list default="true" id="ddb76126-e658-4ac7-a680-b9c83a4fac4a" name="Changes" comment="init header layout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/layouts/HeaderLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/layouts/HeaderLayout.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/main.js" afterDir="false" />
     </list>
@@ -79,6 +78,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front/src/components/User" />
       <recent name="$PROJECT_DIR$/front/src/assets" />
     </key>
   </component>
@@ -99,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664529047774</updated>
-      <workItem from="1664529048954" duration="12330000" />
+      <workItem from="1664529048954" duration="19930000" />
     </task>
     <task id="LOCAL-00001" summary="init router">
       <created>1664535389264</created>
@@ -108,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664535389264</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init header layout">
+      <created>1664609542916</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664609542916</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +134,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init router" />
-    <option name="LAST_COMMIT_MESSAGE" value="init router" />
+    <MESSAGE value="init headerlayout" />
+    <MESSAGE value="init header layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="init header layout" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
