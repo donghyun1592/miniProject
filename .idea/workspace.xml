@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddb76126-e658-4ac7-a680-b9c83a4fac4a" name="Changes" comment="init header layout">
+    <list default="true" id="ddb76126-e658-4ac7-a680-b9c83a4fac4a" name="Changes" comment="login, signup page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/layouts/HeaderLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/layouts/HeaderLayout.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/main.js" afterDir="false" />
+    </list>
+    <list id="24c92dba-a5bd-475e-b04f-a55c262d5744" name="no" comment="">
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +37,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,6 +74,7 @@
     "node.js.selected.package.standard": "",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.sourceCode.Vue template",
+    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -95,11 +102,12 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ddb76126-e658-4ac7-a680-b9c83a4fac4a" name="Changes" comment="" />
+      <changelist id="24c92dba-a5bd-475e-b04f-a55c262d5744" name="no" comment="" />
       <created>1664529047774</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664529047774</updated>
-      <workItem from="1664529048954" duration="19930000" />
+      <workItem from="1664529048954" duration="26595000" />
     </task>
     <task id="LOCAL-00001" summary="init router">
       <created>1664535389264</created>
@@ -115,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664609542916</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="login, signup page">
+      <created>1664618673107</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664618673107</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +151,8 @@
     <MESSAGE value="init router" />
     <MESSAGE value="init headerlayout" />
     <MESSAGE value="init header layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="init header layout" />
+    <MESSAGE value="login, signup page" />
+    <option name="LAST_COMMIT_MESSAGE" value="login, signup page" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
