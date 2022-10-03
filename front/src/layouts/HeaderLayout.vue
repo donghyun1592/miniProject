@@ -37,12 +37,18 @@
                    type="search"
                    placeholder="물품이나 동네를 검색해보세요"
                    aria-label="Search">
-            <router-link to="/login" class="login pt-1">
+            <router-link to="/login" v-if="!isLogin" class="login pt-1">
               <span class="pr-2">로그인</span>
             </router-link>
-            <router-link to="/signup" class="login pt-1">
+            <router-link to="/signup" v-if="!isLogin" class="login pt-1">
               <span>회원가입</span>
             </router-link>
+            <router-link to="/signup" v-if="isLogin" class="login pt-1">
+              <span> {{this.$store.state.member.name}}</span>
+            </router-link>
+            <a href="/" v-if="isLogin" @click="logout" class="login pt-1">
+              <span> 로그아웃 </span>
+            </a>
           </form>
         </div>
       </div>
@@ -52,6 +58,22 @@
 <script>
 export default {
   name: 'HeaderLayout',
+  data() {
+    return {
+
+    };
+  },
+  computed: {
+    isLogin() {
+      return this.$store.state.token != '';
+    },
+  },
+  methods: {
+    logout() {
+      alert('logout');
+      this.$store.commit('logout');
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>

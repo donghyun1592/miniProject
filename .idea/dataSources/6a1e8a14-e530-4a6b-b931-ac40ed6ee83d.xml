@@ -8,7 +8,7 @@
 16384||10|C|G
 16384||10|T|G
 16384||16394|T|G</Grants>
-      <IntrospectionStateNumber>1185</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1638</IntrospectionStateNumber>
       <ServerVersion>13.7</ServerVersion>
       <StartupTime>1664463092</StartupTime>
       <TimeZones>true ACDT
@@ -111,7 +111,7 @@ false America/Argentina/San_Luis
 false America/Argentina/Tucuman
 false America/Argentina/Ushuaia
 false America/Aruba
-false America/Asuncion
+true America/Asuncion
 false America/Atikokan
 true America/Atka
 false America/Bahia
@@ -262,7 +262,7 @@ true America/Yellowknife
 false Antarctica/Casey
 false Antarctica/Davis
 false Antarctica/DumontDUrville
-false Antarctica/Macquarie
+true Antarctica/Macquarie
 false Antarctica/Mawson
 true Antarctica/McMurdo
 false Antarctica/Palmer
@@ -383,29 +383,29 @@ false Atlantic/Reykjavik
 false Atlantic/South_Georgia
 false Atlantic/St_Helena
 false Atlantic/Stanley
-false Australia/ACT
-false Australia/Adelaide
+true Australia/ACT
+true Australia/Adelaide
 false Australia/Brisbane
-false Australia/Broken_Hill
-false Australia/Canberra
-false Australia/Currie
+true Australia/Broken_Hill
+true Australia/Canberra
+true Australia/Currie
 false Australia/Darwin
 false Australia/Eucla
-false Australia/Hobart
-false Australia/LHI
+true Australia/Hobart
+true Australia/LHI
 false Australia/Lindeman
-false Australia/Lord_Howe
-false Australia/Melbourne
-false Australia/NSW
+true Australia/Lord_Howe
+true Australia/Melbourne
+true Australia/NSW
 false Australia/North
 false Australia/Perth
 false Australia/Queensland
-false Australia/South
-false Australia/Sydney
-false Australia/Tasmania
-false Australia/Victoria
+true Australia/South
+true Australia/Sydney
+true Australia/Tasmania
+true Australia/Victoria
 false Australia/West
-false Australia/Yancowinna
+true Australia/Yancowinna
 true BDST
 false BDT
 false BNT
@@ -619,7 +619,7 @@ false KRAST
 false KRAT
 false KST
 false Kwajalein
-false LHDT
+true LHDT
 false LHST
 false LIGT
 false LINT
@@ -681,7 +681,7 @@ false PST
 true PST8PDT
 false PWT
 true PYST
-false PYT
+true PYT
 false Pacific/Apia
 true Pacific/Auckland
 false Pacific/Bougainville
@@ -708,7 +708,7 @@ false Pacific/Marquesas
 false Pacific/Midway
 false Pacific/Nauru
 false Pacific/Niue
-false Pacific/Norfolk
+true Pacific/Norfolk
 false Pacific/Noumea
 false Pacific/Pago_Pago
 false Pacific/Palau
@@ -806,11 +806,8 @@ false Zulu
 14017||10|C|G
 14017||-9223372036854775808|U|G
 14017||10|U|G</Grants>
-      <IntrospectionStateNumber>1185</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1638</IntrospectionStateNumber>
       <ObjectId>14301</ObjectId>
-      <Relations>sequence|table|16658|16660|1
-sequence|table|16669|16671|1
-</Relations>
       <OwnerName>son</OwnerName>
     </database>
     <database id="3" parent="1" name="rdsadmin">
@@ -4200,208 +4197,519 @@ default_transaction_read_only=off</Config>
     <schema id="261" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>1185</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1638</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>549</StateNumber>
       <OwnerName>son</OwnerName>
     </schema>
-    <sequence id="262" parent="261" name="account_uid_seq">
-      <DataType>integer|0s</DataType>
-      <ObjectId>16658</ObjectId>
-      <StateNumber>1180</StateNumber>
+    <sequence id="262" parent="261" name="hibernate_sequence">
+      <DataType>bigint|0s</DataType>
+      <ObjectId>17219</ObjectId>
+      <StateNumber>1607</StateNumber>
       <OwnerName>son</OwnerName>
     </sequence>
-    <sequence id="263" parent="261" name="member_uid_seq">
-      <DataType>integer|0s</DataType>
-      <ObjectId>16669</ObjectId>
-      <StateNumber>1181</StateNumber>
-      <OwnerName>son</OwnerName>
-    </sequence>
-    <table id="264" parent="261" name="account">
-      <ObjectId>16660</ObjectId>
-      <StateNumber>1180</StateNumber>
+    <table id="263" parent="261" name="authoritys">
+      <ObjectId>17221</ObjectId>
+      <StateNumber>1611</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>son</OwnerName>
     </table>
-    <table id="265" parent="261" name="member">
-      <ObjectId>16671</ObjectId>
-      <StateNumber>1181</StateNumber>
+    <table id="264" parent="261" name="board">
+      <ObjectId>17252</ObjectId>
+      <StateNumber>1634</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>son</OwnerName>
     </table>
-    <column id="266" parent="264" name="uid">
-      <DataType>integer|0s</DataType>
-      <DefaultExpression>nextval(&apos;account_uid_seq&apos;::regclass)</DefaultExpression>
+    <table id="265" parent="261" name="category">
+      <ObjectId>17261</ObjectId>
+      <StateNumber>1634</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>son</OwnerName>
+    </table>
+    <table id="266" parent="261" name="chat_message">
+      <ObjectId>17269</ObjectId>
+      <StateNumber>1632</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>son</OwnerName>
+    </table>
+    <table id="267" parent="261" name="member">
+      <ObjectId>17226</ObjectId>
+      <StateNumber>1612</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>son</OwnerName>
+    </table>
+    <table id="268" parent="261" name="member_authority">
+      <ObjectId>17237</ObjectId>
+      <StateNumber>1611</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>son</OwnerName>
+    </table>
+    <table id="269" parent="261" name="reply">
+      <ObjectId>17277</ObjectId>
+      <StateNumber>1636</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>son</OwnerName>
+    </table>
+    <column id="270" parent="263" name="authority_name">
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>1180</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="267" parent="264" name="account_id">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>2</Position>
-      <StateNumber>1180</StateNumber>
+      <StateNumber>1608</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="268" parent="264" name="last_login_date">
-      <DataType>timestamp|0s</DataType>
-      <Position>3</Position>
-      <StateNumber>1180</StateNumber>
-      <TypeId>1114</TypeId>
-    </column>
-    <column id="269" parent="264" name="name">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>4</Position>
-      <StateNumber>1180</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="270" parent="264" name="password">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>5</Position>
-      <StateNumber>1180</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="271" parent="264" name="phone_num">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>6</Position>
-      <StateNumber>1180</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="272" parent="264" name="reg_date">
-      <DataType>timestamp|0s</DataType>
-      <Position>7</Position>
-      <StateNumber>1180</StateNumber>
-      <TypeId>1114</TypeId>
-    </column>
-    <column id="273" parent="264" name="role">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>8</Position>
-      <StateNumber>1180</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="274" parent="264" name="update_date">
-      <DataType>timestamp|0s</DataType>
-      <Position>9</Position>
-      <StateNumber>1180</StateNumber>
-      <TypeId>1114</TypeId>
-    </column>
-    <index id="275" parent="264" name="account_pkey">
-      <ColNames>uid</ColNames>
+    <index id="271" parent="263" name="authoritys_pkey">
+      <ColNames>authority_name</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16667</ObjectId>
+      <ObjectId>17224</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1180</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <index id="276" parent="264" name="uk_4lde57f579n315au55ua4gqxk">
-      <ColNames>account_id</ColNames>
-      <ObjectId>16680</ObjectId>
-      <StateNumber>1182</StateNumber>
+      <StateNumber>1608</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
       <CollationNames>default</CollationNames>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="277" parent="264" name="account_pkey">
+    <key id="272" parent="263" name="authoritys_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16668</ObjectId>
+      <ObjectId>17225</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1180</StateNumber>
-      <UnderlyingIndexId>16667</UnderlyingIndexId>
+      <StateNumber>1608</StateNumber>
+      <UnderlyingIndexId>17224</UnderlyingIndexId>
     </key>
-    <key id="278" parent="264" name="uk_4lde57f579n315au55ua4gqxk">
-      <ObjectId>16681</ObjectId>
-      <StateNumber>1182</StateNumber>
-      <UnderlyingIndexId>16680</UnderlyingIndexId>
-    </key>
-    <column id="279" parent="265" name="uid">
-      <DataType>integer|0s</DataType>
-      <DefaultExpression>nextval(&apos;member_uid_seq&apos;::regclass)</DefaultExpression>
+    <column id="273" parent="264" name="board_id">
+      <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>1181</StateNumber>
-      <TypeId>23</TypeId>
+      <StateNumber>1630</StateNumber>
+      <TypeId>20</TypeId>
     </column>
-    <column id="280" parent="265" name="account_id">
+    <column id="274" parent="264" name="contents">
       <DataType>varchar(255)|0s</DataType>
       <Position>2</Position>
-      <StateNumber>1181</StateNumber>
+      <StateNumber>1630</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="281" parent="265" name="last_login_date">
+    <column id="275" parent="264" name="create_date">
       <DataType>timestamp|0s</DataType>
       <Position>3</Position>
-      <StateNumber>1181</StateNumber>
+      <StateNumber>1630</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="282" parent="265" name="name">
+    <column id="276" parent="264" name="filepath1">
       <DataType>varchar(255)|0s</DataType>
       <Position>4</Position>
-      <StateNumber>1181</StateNumber>
+      <StateNumber>1630</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="283" parent="265" name="password">
+    <column id="277" parent="264" name="filepath2">
       <DataType>varchar(255)|0s</DataType>
       <Position>5</Position>
-      <StateNumber>1181</StateNumber>
+      <StateNumber>1630</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="284" parent="265" name="phone_num">
+    <column id="278" parent="264" name="filepath3">
       <DataType>varchar(255)|0s</DataType>
       <Position>6</Position>
-      <StateNumber>1181</StateNumber>
+      <StateNumber>1630</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="285" parent="265" name="reg_date">
-      <DataType>timestamp|0s</DataType>
+    <column id="279" parent="264" name="hit">
+      <DataType>integer|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
       <Position>7</Position>
-      <StateNumber>1181</StateNumber>
-      <TypeId>1114</TypeId>
+      <StateNumber>1630</StateNumber>
+      <TypeId>23</TypeId>
     </column>
-    <column id="286" parent="265" name="role">
+    <column id="280" parent="264" name="hopeaddress">
       <DataType>varchar(255)|0s</DataType>
       <Position>8</Position>
-      <StateNumber>1181</StateNumber>
+      <StateNumber>1630</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="287" parent="265" name="update_date">
-      <DataType>timestamp|0s</DataType>
+    <column id="281" parent="264" name="onsale">
+      <DataType>boolean|0s</DataType>
+      <NotNull>1</NotNull>
       <Position>9</Position>
-      <StateNumber>1181</StateNumber>
+      <StateNumber>1630</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="282" parent="264" name="price">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>10</Position>
+      <StateNumber>1630</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="283" parent="264" name="title">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>11</Position>
+      <StateNumber>1630</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="284" parent="264" name="update_date">
+      <DataType>timestamp|0s</DataType>
+      <Position>12</Position>
+      <StateNumber>1630</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="288" parent="265" name="member_pkey">
-      <ColNames>uid</ColNames>
+    <column id="285" parent="264" name="category_id">
+      <DataType>bigint|0s</DataType>
+      <Position>13</Position>
+      <StateNumber>1630</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="286" parent="264" name="member_id">
+      <DataType>bigint|0s</DataType>
+      <Position>14</Position>
+      <StateNumber>1630</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <foreign-key id="287" parent="264" name="fk60jn05fpinj6cjhqcmtkacu2g">
+      <ColNames>category_id</ColNames>
+      <ObjectId>17282</ObjectId>
+      <RefColNames>category_id</RefColNames>
+      <RefColPositions>1</RefColPositions>
+      <StateNumber>1634</StateNumber>
+      <RefTableId>17261</RefTableId>
+      <RefTableName>category</RefTableName>
+      <RefTableKind>table</RefTableKind>
+    </foreign-key>
+    <foreign-key id="288" parent="264" name="fksds8ox89wwf6aihinar49rmfy">
+      <ColNames>member_id</ColNames>
+      <ObjectId>17287</ObjectId>
+      <RefColNames>member_id</RefColNames>
+      <RefColPositions>1</RefColPositions>
+      <StateNumber>1635</StateNumber>
+      <RefTableId>17226</RefTableId>
+      <RefTableName>member</RefTableName>
+      <RefTableKind>table</RefTableKind>
+    </foreign-key>
+    <index id="289" parent="264" name="board_pkey">
+      <ColNames>board_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16678</ObjectId>
+      <ObjectId>17259</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1181</StateNumber>
+      <StateNumber>1630</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="289" parent="265" name="uk_i54h1gvvnejys85e9d9qo9f2u">
-      <ColNames>account_id</ColNames>
-      <ObjectId>16682</ObjectId>
-      <StateNumber>1183</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationNames>default</CollationNames>
-      <CollationIds>100</CollationIds>
-      <CollationParentNames>pg_catalog</CollationParentNames>
-    </index>
-    <key id="290" parent="265" name="member_pkey">
+    <key id="290" parent="264" name="board_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16679</ObjectId>
+      <ObjectId>17260</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1181</StateNumber>
-      <UnderlyingIndexId>16678</UnderlyingIndexId>
+      <StateNumber>1630</StateNumber>
+      <UnderlyingIndexId>17259</UnderlyingIndexId>
     </key>
-    <key id="291" parent="265" name="uk_i54h1gvvnejys85e9d9qo9f2u">
-      <ObjectId>16683</ObjectId>
-      <StateNumber>1183</StateNumber>
-      <UnderlyingIndexId>16682</UnderlyingIndexId>
+    <column id="291" parent="265" name="category_id">
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>1631</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="292" parent="265" name="description">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>2</Position>
+      <StateNumber>1631</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="293" parent="265" name="icon">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>3</Position>
+      <StateNumber>1631</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="294" parent="265" name="name">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>4</Position>
+      <StateNumber>1631</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="295" parent="265" name="category_pkey">
+      <ColNames>category_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17267</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1631</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="296" parent="265" name="category_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17268</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1631</StateNumber>
+      <UnderlyingIndexId>17267</UnderlyingIndexId>
+    </key>
+    <column id="297" parent="266" name="room_id">
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>1632</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="298" parent="266" name="chatid">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>2</Position>
+      <StateNumber>1632</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="299" parent="266" name="createdate">
+      <DataType>timestamp|0s</DataType>
+      <Position>3</Position>
+      <StateNumber>1632</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="300" parent="266" name="message">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>4</Position>
+      <StateNumber>1632</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="301" parent="266" name="sender">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>5</Position>
+      <StateNumber>1632</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="302" parent="266" name="chat_message_pkey">
+      <ColNames>room_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17275</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1632</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="303" parent="266" name="chat_message_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17276</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1632</StateNumber>
+      <UnderlyingIndexId>17275</UnderlyingIndexId>
+    </key>
+    <column id="304" parent="267" name="member_id">
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>1609</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="305" parent="267" name="activated">
+      <DataType>boolean|0s</DataType>
+      <Position>2</Position>
+      <StateNumber>1609</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="306" parent="267" name="address">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>3</Position>
+      <StateNumber>1609</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="307" parent="267" name="address_detail">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>4</Position>
+      <StateNumber>1609</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="308" parent="267" name="chatting">
+      <DataType>varchar(255)|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <Position>5</Position>
+      <StateNumber>1609</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="309" parent="267" name="email">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>6</Position>
+      <StateNumber>1609</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="310" parent="267" name="name">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>7</Position>
+      <StateNumber>1609</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="311" parent="267" name="password">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>8</Position>
+      <StateNumber>1609</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="312" parent="267" name="phone">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>9</Position>
+      <StateNumber>1609</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="313" parent="267" name="report_count">
+      <DataType>integer|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+      <StateNumber>1609</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="314" parent="267" name="resident1">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>11</Position>
+      <StateNumber>1609</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="315" parent="267" name="resident2">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>12</Position>
+      <StateNumber>1609</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="316" parent="267" name="zzim">
+      <DataType>varchar(255)|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <Position>13</Position>
+      <StateNumber>1609</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="317" parent="267" name="member_pkey">
+      <ColNames>member_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17235</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1609</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="318" parent="267" name="member_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17236</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1609</StateNumber>
+      <UnderlyingIndexId>17235</UnderlyingIndexId>
+    </key>
+    <column id="319" parent="268" name="member_id">
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>1610</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="320" parent="268" name="authority_name">
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>1610</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <foreign-key id="321" parent="268" name="fk8uf5ff5jr0nuvbj4yfp5ob9sq">
+      <ColNames>member_id</ColNames>
+      <ObjectId>17247</ObjectId>
+      <RefColNames>member_id</RefColNames>
+      <RefColPositions>1</RefColPositions>
+      <StateNumber>1612</StateNumber>
+      <RefTableId>17226</RefTableId>
+      <RefTableName>member</RefTableName>
+      <RefTableKind>table</RefTableKind>
+    </foreign-key>
+    <foreign-key id="322" parent="268" name="fkclppfbtf4phucb25lqbhyop7x">
+      <ColNames>authority_name</ColNames>
+      <ObjectId>17242</ObjectId>
+      <RefColNames>authority_name</RefColNames>
+      <RefColPositions>1</RefColPositions>
+      <StateNumber>1611</StateNumber>
+      <RefTableId>17221</RefTableId>
+      <RefTableName>authoritys</RefTableName>
+      <RefTableKind>table</RefTableKind>
+    </foreign-key>
+    <index id="323" parent="268" name="member_authority_pkey">
+      <ColNames>member_id
+authority_name</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17240</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1610</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>
+100</CollationIds>
+      <CollationParentNames>
+pg_catalog</CollationParentNames>
+      <CollationNames>
+default</CollationNames>
+    </index>
+    <key id="324" parent="268" name="member_authority_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17241</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1610</StateNumber>
+      <UnderlyingIndexId>17240</UnderlyingIndexId>
+    </key>
+    <column id="325" parent="269" name="reply_id">
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>1633</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="326" parent="269" name="content">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>2</Position>
+      <StateNumber>1633</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="327" parent="269" name="create_date">
+      <DataType>timestamp|0s</DataType>
+      <Position>3</Position>
+      <StateNumber>1633</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="328" parent="269" name="board_id">
+      <DataType>bigint|0s</DataType>
+      <Position>4</Position>
+      <StateNumber>1633</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="329" parent="269" name="member_id">
+      <DataType>bigint|0s</DataType>
+      <Position>5</Position>
+      <StateNumber>1633</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <foreign-key id="330" parent="269" name="fkcs9hiip0bv9xxfrgoj0lwv2dt">
+      <ColNames>board_id</ColNames>
+      <ObjectId>17292</ObjectId>
+      <RefColNames>board_id</RefColNames>
+      <RefColPositions>1</RefColPositions>
+      <StateNumber>1636</StateNumber>
+      <RefTableId>17252</RefTableId>
+      <RefTableName>board</RefTableName>
+      <RefTableKind>table</RefTableKind>
+    </foreign-key>
+    <foreign-key id="331" parent="269" name="fken6vrmi5oth4bg6ybfc202fmu">
+      <ColNames>member_id</ColNames>
+      <ObjectId>17297</ObjectId>
+      <RefColNames>member_id</RefColNames>
+      <RefColPositions>1</RefColPositions>
+      <StateNumber>1637</StateNumber>
+      <RefTableId>17226</RefTableId>
+      <RefTableName>member</RefTableName>
+      <RefTableKind>table</RefTableKind>
+    </foreign-key>
+    <index id="332" parent="269" name="reply_pkey">
+      <ColNames>reply_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17280</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1633</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="333" parent="269" name="reply_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17281</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1633</StateNumber>
+      <UnderlyingIndexId>17280</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>

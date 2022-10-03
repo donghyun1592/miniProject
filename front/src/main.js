@@ -4,23 +4,24 @@ import router from './router';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import {BootstrapVue, IconsPlugin} from 'bootstrap-vue';
+import store from './store';
 import Vuelidate from 'vuelidate';
-import axios from 'axios';
+import * as Validators from 'vuelidate/lib/validators';
 
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 Vue.use(BootstrapVue);
 
-// axios를 import
+// UI-Form Validator
+Vue.use(Vuelidate);
+Vue.prototype.$validators = window.validators = Validators;
 
 Vue.prototype.$eventBus = new Vue();
-Vue.prototype.$axios = axios;
-
-Vue.use(Vuelidate);
 
 Vue.config.productionTip = false;
 
 new Vue({
   router,
+  store,
   render: (h) => h(App),
 }).$mount('#app');

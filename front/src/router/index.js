@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import Vuex from 'vuex';
 
 import DefaultLayout from '@/layouts/DefaultLayout';
 import HomePage from '@/components/HomePage';
@@ -8,6 +9,7 @@ import SignUp from '@/components/User/SignUp';
 
 
 Vue.use(VueRouter);
+Vue.use(Vuex);
 
 
 const routes = [{
