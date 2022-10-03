@@ -52,20 +52,23 @@
                     필수입력란 입니다.
                   </b-form-invalid-feedback>
                   <b-form-invalid-feedback
-                      v-else-if="isDuplicateEmail"
+                      v-else-if="!$v.form.email.email"
                       id="input-2-live-feedback">
-                    이메일 중복확인을 해주세요.
+                    이메일 형식이아닙니다
                   </b-form-invalid-feedback>
                   <b-form-invalid-feedback
                       v-else
                       id="input-2-live-feedback">
-                    이메일형식이 아닙니다.
+                    중복체크를 해주세요.
                   </b-form-invalid-feedback>
                 </b-form-group>
               </b-form-group>
             </b-col>
             <b-col cols="2">
-              <b-button class="ml-2" @click="checkDuplication" size="sm">
+              <b-button class="ml-2"
+                        @click="checkDuplication"
+                        size="sm"
+                        :disabled="form.email==''">
                 중복확인
               </b-button>
             </b-col>
@@ -76,19 +79,19 @@
               <label for="password">비밀번호</label>
             </b-col>
             <b-col cols='5'>
-              <b-form-group id="example-input-group-1"
-                            label-for="example-input-1">
-                <b-form-group id="example-input-group-1"
-                              label-for="example-input-1">
+              <b-form-group id="example-input-group-3"
+                            label-for="example-input-3">
+                <b-form-group id="example-input-group-3"
+                              label-for="example-input-3">
                   <b-form-input
                       type="password"
-                      id="example-input-1"
-                      name="example-input-1"
+                      id="example-input-3"
+                      name="example-input-3"
                       v-model="$v.form.password.$model"
                       :state="validateState('password')"
                       aria-describedby="input-1-live-feedback"
                   ></b-form-input>
-                  <b-form-invalid-feedback id="input-1-live-feedback">
+                  <b-form-invalid-feedback id="input-3-live-feedback">
                     필수입력란 입니다.
                   </b-form-invalid-feedback>
                 </b-form-group>
@@ -101,19 +104,19 @@
               <label for="password">주소</label>
             </b-col>
             <b-col cols='5'>
-              <b-form-group id="example-input-group-1"
-                            label-for="example-input-1">
-                <b-form-group id="example-input-group-1"
-                              label-for="example-input-1">
+              <b-form-group id="example-input-group-4"
+                            label-for="example-input-4">
+                <b-form-group id="example-input-group-4"
+                              label-for="example-input-4">
                   <b-form-input
-                      id="example-input-1"
-                      name="example-input-1"
+                      id="example-input-4"
+                      name="example-input-4"
                       v-model="$v.form.address.$model"
                       :state="validateState('address')"
-                      aria-describedby="input-1-live-feedback"
+                      aria-describedby="input-4-live-feedback"
                       disabled
                   ></b-form-input>
-                  <b-form-invalid-feedback id="input-1-live-feedback">
+                  <b-form-invalid-feedback id="input-4-live-feedback">
                     필수입력란 입니다.
                   </b-form-invalid-feedback>
                 </b-form-group>
@@ -131,18 +134,18 @@
               <label for="password">상세주소</label>
             </b-col>
             <b-col cols='5'>
-              <b-form-group id="example-input-group-1"
-                            label-for="example-input-1">
-                <b-form-group id="example-input-group-1"
-                              label-for="example-input-1">
+              <b-form-group id="example-input-group-5"
+                            label-for="example-input-5">
+                <b-form-group id="example-input-group-5"
+                              label-for="example-input-5">
                   <b-form-input
                       type="password"
-                      id="example-input-1"
-                      name="example-input-1"
+                      id="example-input-5"
+                      name="example-input-5"
                       v-model="form.addressDetail"
-                      aria-describedby="input-1-live-feedback"
+                      aria-describedby="input-5-live-feedback"
                   ></b-form-input>
-                  <b-form-invalid-feedback id="input-1-live-feedback">
+                  <b-form-invalid-feedback id="input-5-live-feedback">
                     필수입력란 입니다.
                   </b-form-invalid-feedback>
                 </b-form-group>
@@ -155,18 +158,18 @@
               <label for="password">휴대폰번호</label>
             </b-col>
             <b-col cols='5'>
-              <b-form-group id="example-input-group-1"
-                            label-for="example-input-1">
-                <b-form-group id="example-input-group-1"
-                              label-for="example-input-1">
+              <b-form-group id="example-input-group-6"
+                            label-for="example-input-6">
+                <b-form-group id="example-input-group-6"
+                              label-for="example-input-6">
                   <b-form-input
-                      id="example-input-1"
-                      name="example-input-1"
+                      id="example-input-6"
+                      name="example-input-6"
                       v-model="$v.form.phone.$model"
                       :state="validateState('phone')"
-                      aria-describedby="input-1-live-feedback"
+                      aria-describedby="input-6-live-feedback"
                   ></b-form-input>
-                  <b-form-invalid-feedback id="input-1-live-feedback">
+                  <b-form-invalid-feedback id="input-6-live-feedback">
                     필수입력란 입니다.
                   </b-form-invalid-feedback>
                 </b-form-group>
@@ -181,14 +184,21 @@
         </b-form>
       </div>
     </b-card>
+
+    <AddressSelectModal ref="addressSelectModal"
+                        @setAddress="setAddress">
+    </AddressSelectModal>
+    <ConfirmModal ref="confirmModal"></ConfirmModal>
   </div>
 </template>
 <script>
 import {validationMixin} from 'vuelidate';
 import {required, email} from 'vuelidate/lib/validators';
+import AddressSelectModal from '@/components/common/AddressSelectModal';
 import axios from 'axios';
 
 export default {
+  components: {AddressSelectModal},
   mixins: [validationMixin],
   name: 'SignUp',
   data() {
@@ -245,10 +255,10 @@ export default {
         method: 'get',
       }).then((res) => {
         if (!res.data && !this.form.email == '') {
-          alert('사용가능한 이메일 입니다');
+          this.$refs.confirmModal.show('이메일 중복확인', '사용가능한 이메일입니다');
           this.isDuplicateEmail = false;
         } else {
-          alert('중복 이메일입니다');
+          this.$refs.confirmModal.show('이메일 중복확인', '중복된 이메일입니다.');
         }
       });
     },
@@ -258,45 +268,25 @@ export default {
         return;
       }
       if (this.isDuplicateEmail) {
-        alert('이메일 중복체크를 해주세요');
+        this.$refs.confirmModal.show('회원가입 실패', '이메일 중복체크를 해주세요');
         return;
       }
 
       axios.post('/api/member', this.form).then((res) => {
-        alert('회원가입 성공');
-        this.$router.push('/login');
+        this.$refs.confirmModal.show('회원가입 성공', '회원가입 되셨습니다.');
+        setTimeout(() => {
+          this.$router.push('/login');
+        }, 3000);
       }).catch((err) => {
         console.log(err);
       });
     },
     addressApi() {
-      new window.daum.Postcode({
-        oncomplete: (
-            data,
-        ) => {
-          let fullRoadAddr = data.roadAddress; // 도로명 주소 변수
-          let extraRoadAddr =
-              '';
-
-          if (data.bname !== '' && /[동|로|가]$/g.test(data.bname)) {
-            extraRoadAddr += data.bname;
-          } // 건물명이 있고, 공동주택일 경우 추가한다.
-
-          if (data.buildingName !== '' && data.apartment === 'Y') {
-            extraRoadAddr += (extraRoadAddr !== '' ?
-                ', ' + data.buildingName : data.buildingName);
-          } // 도로명, 지번 조합형 주소가 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
-          if (extraRoadAddr !== '') {
-            extraRoadAddr = ' (' + extraRoadAddr + ')';
-          } // 도로명, 지번 주소의 유무에 따라 해당 조합형 주소를 추가한다.
-          if (fullRoadAddr !== '') {
-            fullRoadAddr += extraRoadAddr;
-          } // 우편번호와 주소 정보를 해당 필드에 넣는다.
-
-          this.form.addressNum = data.zonecode; // 5자리 새우편번호 사용
-          this.form.address = fullRoadAddr;
-        },
-      }).open(this.$refs.embed);
+      this.$refs.addressSelectModal.show();
+    },
+    setAddress(addressInfo) {
+      this.form.address = addressInfo.address;
+      this.form.addressNum = addressInfo.addressNum;
     },
   },
 };

@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <b-card title="로그인" class="pb-5 pt-3">
+  <div class="login-container">
+    <b-card title="로그인" class="pb-5 pt-3 border-0">
       <div class="input-form col-md-12 mx-auto">
         <b-form @submit.stop.prevent="login">
         <b-row>
-          <b-col cols='3' offset-md="1" align-self="center">
+          <b-col cols='3' offset-md="1" class="mt-2">
             <label for="email">아이디(이메일)</label>
           </b-col>
           <b-col cols='7'>
@@ -76,6 +76,7 @@
         </b-row>
       </div>
     </b-card>
+    <ConfirmModal ref="confirmModal" :text="text"></ConfirmModal>
   </div>
 </template>
 <script>
@@ -92,6 +93,7 @@ export default {
         email: '',
         password: '',
       },
+      text: '',
     };
   },
   validations: {
@@ -126,7 +128,7 @@ export default {
             resolve(token);
           }
         }).catch((err) => {
-          alert('login failed');
+          this.$refs.confirmModal.show('로그인 실패', '아이디 또는 비밀번호가 틀렸습니다.');
         });
       });
 
@@ -136,8 +138,10 @@ export default {
             this.$store.commit('setMember', res);
           });
         }).finally(()=>{
-          alert('login success');
-          this.$router.push('/');
+          this.$refs.confirmModal.show('로그인 성공', '환영합니다');
+          setTimeout(() => {
+            this.$router.push('/');
+          }, 2000);
         });
       } else {
         return;

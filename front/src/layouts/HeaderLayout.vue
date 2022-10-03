@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header-layout-container">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">
@@ -32,27 +32,39 @@
               </a>
             </li>
           </ul>
-          <form class="d-flex align-middle">
+          <form class="d-flex justify-content-center">
             <input class="form-control me-2 search-input"
                    type="search"
-                   placeholder="물품이나 동네를 검색해보세요"
+                   placeholder="물품이나 동네를 검색해보세요."
                    aria-label="Search">
-            <router-link to="/login" v-if="!isLogin" class="login pt-1">
-              <span class="pr-2">로그인</span>
-            </router-link>
-            <router-link to="/signup" v-if="!isLogin" class="login pt-1">
-              <span>회원가입</span>
-            </router-link>
-            <router-link to="/signup" v-if="isLogin" class="login pt-1">
-              <span> {{this.$store.state.member.name}}</span>
-            </router-link>
-            <a href="/" v-if="isLogin" @click="logout" class="login pt-1">
-              <span> 로그아웃 </span>
-            </a>
           </form>
+            <ul class="navbar-nav me-auto mt-1 mb-2">
+              <li>
+                <router-link to="/login" v-if="!isLogin" class="login pt-1">
+                  <span class="pr-2">로그인</span>
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/signup" v-if="!isLogin" class="login pt-1">
+                  <span>회원가입</span>
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/mypage" v-if="isLogin" class="login pt-1">
+                  <span> 마이페이지 </span>
+                </router-link>
+              </li>
+              <li>
+                <a href="/" v-if="isLogin" @click="logout" class="login pt-1">
+                  <span> 로그아웃 </span>
+                </a>
+              </li>
+            </ul>
         </div>
       </div>
     </nav>
+
+    <ConfirmModal ref="confirmModal"></ConfirmModal>
   </div>
 </template>
 <script>
@@ -70,13 +82,16 @@ export default {
   },
   methods: {
     logout() {
-      alert('logout');
       this.$store.commit('logout');
+      this.$refs.confirmModal.show('로그아웃', '로그아웃 되었습니다.');
     },
   },
 };
 </script>
 <style lang="scss" scoped>
+.header-layout-container{
+  border-bottom: 1px solid #EAEBEE;
+}
 ::v-deep{
   .navbar{
     padding-left: 5rem;
@@ -98,7 +113,7 @@ export default {
     margin-right: 20px;
   }
   .search-input{
-    width: 250px;
+    width: 18rem;
     background-color: #f2f3f6;
   }
   .login{

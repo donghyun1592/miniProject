@@ -10,6 +10,7 @@ import HeaderLayout from './HeaderLayout';
 import FooterLayout from '@/layouts/FooterLayout';
 
 export default {
+  name: 'defaultLayout',
   components: {
     HeaderLayout: HeaderLayout,
     FooterLayout: FooterLayout,

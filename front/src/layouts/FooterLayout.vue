@@ -120,6 +120,7 @@ a {
   border-top: 1px solid #EAEBEE;
   text-align: left;
   margin-left:1rem;
+  margin-right: 1rem;
 }
 #footer_container {
   font-family: sans-serif;
@@ -184,6 +185,11 @@ a {
   #footer_second_sec {
     display: flex;
   }
+  #footer_second_sec > section {
+    min-width: 18rem;
+    max-width: 26rem;
+  }
+
 }
 @media screen and (max-width: 767px){
   #footer_first_sec{
@@ -215,6 +221,7 @@ a {
   color: #868b94;
 }
 #footer_second_sec > section {
+  min-width: 18rem;
   vertical-align: top;
   max-width: 26rem;
 }
