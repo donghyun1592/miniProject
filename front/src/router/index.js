@@ -7,6 +7,9 @@ import HomePage from '@/components/HomePage';
 import Login from '@/components/User/Login';
 import SignUp from '@/components/User/SignUp';
 import MyPage from '@/components/User/MyPage';
+
+import UsedMarket from '@/views/market/UsedMarket';
+
 import VueDaumPostcode from 'vue-daum-postcode';
 
 
@@ -37,6 +40,11 @@ const routes = [{
     path: '/mypage',
     name: 'MyPage',
     component: MyPage,
+  },
+  {
+    path: '/market',
+    name: 'UsedMarket',
+    component: UsedMarket,
   }],
 }];
 

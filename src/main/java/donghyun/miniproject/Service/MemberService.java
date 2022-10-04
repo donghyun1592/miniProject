@@ -57,12 +57,10 @@ public class MemberService implements UserDetailsService {
 
     @Transactional
     public Member signup(MemberDTO memberDto) {
-        // 중복 체크
         if (memberRepository.findOneWithAuthoritiesByEmail(memberDto.getEmail()).orElse(null) != null) {
             throw new DuplicateMemberException("이미 가입되어 있는 유저입니다.");
         }
 
-        //권한 정보 넣음
         Authority authority = Authority.builder()
                 .authorityName("ROLE_USER")
                 .build();

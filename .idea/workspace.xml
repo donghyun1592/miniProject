@@ -6,17 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ddb76126-e658-4ac7-a680-b9c83a4fac4a" name="Changes" comment="login, signup page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/components/HomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/HomePage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/components/User/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/User/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/components/User/SignUp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/User/SignUp.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/layouts/DefaultLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/layouts/DefaultLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/layouts/FooterLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/layouts/FooterLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/common/AddressSelectModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/common/AddressSelectModal.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/layouts/HeaderLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/layouts/HeaderLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/donghyun/miniproject/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/donghyun/miniproject/Controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/donghyun/miniproject/Controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/donghyun/miniproject/Controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/donghyun/miniproject/Service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/donghyun/miniproject/Service/MemberService.java" afterDir="false" />
     </list>
     <list id="24c92dba-a5bd-475e-b04f-a55c262d5744" name="no" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,12 +28,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="miniProject" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -67,37 +56,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/sondonghyun/programing/miniProject/src/main/java/donghyun/miniproject/Entity",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Vue template",
-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sondonghyun/programing/miniProject/src/main/java/donghyun/miniproject/Entity&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Vue template&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;306c13264cbe8548864282c504e32686&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/donghyun/miniproject/Entity" />
       <recent name="$PROJECT_DIR$/src/main/java/donghyun/miniproject/JWT" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front/src/views/market" />
       <recent name="$PROJECT_DIR$/front/src/components/common" />
       <recent name="$PROJECT_DIR$/front/src/components/User" />
       <recent name="$PROJECT_DIR$/front/src/assets" />
@@ -127,7 +118,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664529047774</updated>
-      <workItem from="1664529048954" duration="66535000" />
+      <workItem from="1664529048954" duration="68187000" />
+      <workItem from="1664843090636" duration="55000" />
+      <workItem from="1664843151044" duration="6641000" />
     </task>
     <task id="LOCAL-00001" summary="init router">
       <created>1664535389264</created>

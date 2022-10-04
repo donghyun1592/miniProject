@@ -17,9 +17,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mt-1 mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <router-link to="/market" class="nav-link">
                 <span class="main-tab">중고거래</span>
-              </a>
+              </router-link>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">

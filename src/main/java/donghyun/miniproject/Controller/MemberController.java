@@ -24,7 +24,13 @@ public class MemberController {
         this.authenticationManagerBuilder = authenticationManagerBuilder;
     }
 
-    // 회원가입
+
+    /**
+     * 회원가입
+     *
+     * @param memberDto
+     * @return
+     */
     @PostMapping("/member")
     public ResponseEntity<Member> signup(@RequestBody MemberDTO memberDto) {
         return ResponseEntity.ok(memberService.signup(memberDto));
@@ -32,7 +38,7 @@ public class MemberController {
 
     // 회원 정보 조회
     @GetMapping("/member")
-    @PreAuthorize("hasAnyRole('USER','ADMIN')") // 두가지 권한 모두 허용
+    @PreAuthorize("hasAnyRole('USER','ADMIN')")
     public ResponseEntity<Member> getMyUserInfo() {
         return ResponseEntity.ok(memberService.getMyUserWithAuthorities().get());
     }
