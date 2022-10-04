@@ -12,7 +12,7 @@ import java.util.Optional;
 @Repository
 public interface BoardRepository extends JpaRepository<Board, Long> {
     //전체 검색
-    Page<Board> findAllOrderByHitDesc(Pageable pageable);
+//    Page<Board> findAllOrderByHitDesc(Pageable pageable);
     //게시글 상세보기
     Optional<Board> findBoardByBoardId(long boardId);
 }

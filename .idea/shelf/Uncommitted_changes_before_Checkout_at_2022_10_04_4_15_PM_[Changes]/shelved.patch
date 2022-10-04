@@ -1,0 +1,100 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"ddb76126-e658-4ac7-a680-b9c83a4fac4a\" name=\"Changes\" comment=\"login, signup page\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/front/package-lock.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/front/package-lock.json\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/front/package.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/front/package.json\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/front/src/components/HomePage.vue\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/front/src/components/HomePage.vue\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/front/src/components/User/Login.vue\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/front/src/components/User/Login.vue\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/front/src/components/User/SignUp.vue\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/front/src/components/User/SignUp.vue\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/front/src/layouts/DefaultLayout.vue\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/front/src/layouts/DefaultLayout.vue\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/front/src/layouts/FooterLayout.vue\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/front/src/layouts/FooterLayout.vue\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/front/src/layouts/HeaderLayout.vue\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/front/src/layouts/HeaderLayout.vue\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/front/src/main.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/front/src/main.js\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/front/src/router/index.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/front/src/router/index.js\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/donghyun/miniproject/Controller/LoginController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/donghyun/miniproject/Controller/LoginController.java\" afterDir=\"false\" />\n    </list>\n    <list id=\"24c92dba-a5bd-475e-b04f-a55c262d5744\" name=\"no\" comment=\"\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"ExternalProjectsManager\">\n    <system id=\"GRADLE\">\n      <state>\n        <projects_view>\n          <tree_state>\n            <expand>\n              <path>\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\n                <item name=\"miniProject\" type=\"f1a62948:ProjectNode\" />\n              </path>\n            </expand>\n            <select />\n          </tree_state>\n        </projects_view>\n      </state>\n    </system>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2FTvmWfJF2w35TtzhM9mi7eSQT8\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RequestMappingsPanelOrder0\": \"0\",\n    \"RequestMappingsPanelOrder1\": \"1\",\n    \"RequestMappingsPanelWidth0\": \"75\",\n    \"RequestMappingsPanelWidth1\": \"75\",\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"WebServerToolWindowFactoryState\": \"false\",\n    \"last_opened_file_path\": \"/Users/sondonghyun/programing/miniProject/src/main/java/donghyun/miniproject/Entity\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.standard\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.standard\": \"\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"settings.editor.selected.configurable\": \"preferences.sourceCode.Vue template\",\n    \"ts.external.directory.path\": \"/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  },\n  \"keyToStringList\": {\n    \"DatabaseDriversLRU\": [\n      \"postgresql\"\n    ]\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/main/java/donghyun/miniproject/Entity\" />\n      <recent name=\"$PROJECT_DIR$/src/main/java/donghyun/miniproject/JWT\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/front/src/components/common\" />\n      <recent name=\"$PROJECT_DIR$/front/src/components/User\" />\n      <recent name=\"$PROJECT_DIR$/front/src/assets\" />\n    </key>\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\n      <recent name=\"donghyun.miniproject.Exception\" />\n      <recent name=\"donghyun.miniproject.Repository\" />\n      <recent name=\"donghyun.miniproject.Service\" />\n      <recent name=\"donghyun.miniproject.Controller\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"MiniProjectApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\n      <module name=\"miniProject.main\" />\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"donghyun.miniproject.MiniProjectApplication\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"ddb76126-e658-4ac7-a680-b9c83a4fac4a\" name=\"Changes\" comment=\"\" />\n      <changelist id=\"24c92dba-a5bd-475e-b04f-a55c262d5744\" name=\"no\" comment=\"\" />\n      <created>1664529047774</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1664529047774</updated>\n      <workItem from=\"1664529048954\" duration=\"66535000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"init router\">\n      <created>1664535389264</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664535389264</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"init header layout\">\n      <created>1664609542916</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664609542916</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"login, signup page\">\n      <created>1664618673107</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664618673107</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"4\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"UnknownFeatures\">\n    <option featureType=\"dependencySupport\" implementationName=\"java:jakarta.persistence:jakarta.persistence-api\" />\n    <option featureType=\"dependencySupport\" implementationName=\"java:org.hibernate:hibernate-core\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"init router\" />\n    <MESSAGE value=\"init headerlayout\" />\n    <MESSAGE value=\"init header layout\" />\n    <MESSAGE value=\"login, signup page\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"login, signup page\" />\n  </component>\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\n    <expand />\n    <select />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 5d9e61fbbd6522e2fd124efd43b077e6c546a894)
++++ b/.idea/workspace.xml	(date 1664867123419)
+@@ -4,20 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="ddb76126-e658-4ac7-a680-b9c83a4fac4a" name="Changes" comment="login, signup page">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/front/src/components/HomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/HomePage.vue" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/front/src/components/User/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/User/Login.vue" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/front/src/components/User/SignUp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/User/SignUp.vue" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/front/src/layouts/DefaultLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/layouts/DefaultLayout.vue" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/front/src/layouts/FooterLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/layouts/FooterLayout.vue" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/front/src/layouts/HeaderLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/layouts/HeaderLayout.vue" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/front/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/main.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/front/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/router/index.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/donghyun/miniproject/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/donghyun/miniproject/Controller/LoginController.java" afterDir="false" />
+-    </list>
++    <list default="true" id="ddb76126-e658-4ac7-a680-b9c83a4fac4a" name="Changes" comment="login, signup page" />
+     <list id="24c92dba-a5bd-475e-b04f-a55c262d5744" name="no" comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -34,12 +21,7 @@
+       <state>
+         <projects_view>
+           <tree_state>
+-            <expand>
+-              <path>
+-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+-                <item name="miniProject" type="f1a62948:ProjectNode" />
+-              </path>
+-            </expand>
++            <expand />
+             <select />
+           </tree_state>
+         </projects_view>
+@@ -67,31 +49,31 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RequestMappingsPanelOrder0": "0",
+-    "RequestMappingsPanelOrder1": "1",
+-    "RequestMappingsPanelWidth0": "75",
+-    "RequestMappingsPanelWidth1": "75",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "last_opened_file_path": "/Users/sondonghyun/programing/miniProject/src/main/java/donghyun/miniproject/Entity",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.standard": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.standard": "",
+-    "nodejs_package_manager_path": "npm",
+-    "settings.editor.selected.configurable": "preferences.sourceCode.Vue template",
+-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
++    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
++    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
++    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;last_opened_file_path&quot;: &quot;/Users/sondonghyun/programing/miniProject/src/main/java/donghyun/miniproject/Entity&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Vue template&quot;,
++    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   },
+-  "keyToStringList": {
+-    "DatabaseDriversLRU": [
+-      "postgresql"
++  &quot;keyToStringList&quot;: {
++    &quot;DatabaseDriversLRU&quot;: [
++      &quot;postgresql&quot;
+     ]
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/src/main/java/donghyun/miniproject/Entity" />

@@ -21,9 +21,9 @@ public class BoardService {
         this.boardRepository = boardRepository;
     }
 
-    public Page<Board> getBoardList(Pageable pageable){
-        return boardRepository.findAllOrderByHitDesc(pageable);
-    }
+//    public Page<Board> getBoardList(Pageable pageable){
+//        return boardRepository.findAllOrderByHitDesc(pageable);
+//    }
 
     public Board getBoard(long boardId){
         return boardRepository.findBoardByBoardId(boardId).get();

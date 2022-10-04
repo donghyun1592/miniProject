@@ -19,10 +19,10 @@ public class BoardController extends BaseController {
         this.boardService = boardService;
     }
 
-    @GetMapping("/board")
-    public ResponseEntity<Object> getBoardList(Pageable pageable) {
-        return ResponseEntity.ok(boardService.getBoardList(pageable));
-    }
+//    @GetMapping("/board")
+//    public ResponseEntity<Object> getBoardList(Pageable pageable) {
+//        return ResponseEntity.ok(boardService.getBoardList(pageable));
+//    }
 
     @GetMapping("/board/{boardId}")
     public ResponseEntity<Object> getBoard(@PathVariable long boardId){

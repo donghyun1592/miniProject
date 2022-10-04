@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddb76126-e658-4ac7-a680-b9c83a4fac4a" name="Changes" comment="login, signup page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/components/common/AddressSelectModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/common/AddressSelectModal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/layouts/HeaderLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/layouts/HeaderLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/donghyun/miniproject/Controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/donghyun/miniproject/Controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/donghyun/miniproject/Service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/donghyun/miniproject/Service/MemberService.java" afterDir="false" />
-    </list>
+    <list default="true" id="ddb76126-e658-4ac7-a680-b9c83a4fac4a" name="Changes" comment="login, signup page" />
     <list id="24c92dba-a5bd-475e-b04f-a55c262d5744" name="no" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +36,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
